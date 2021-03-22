@@ -1,0 +1,193 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base */
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: rgb(255, 255, 255);
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    width: 150px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 15px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal */
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/netflix-modificada/img/capa.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.filme-principal .sub-descricao{
+    margin-bottom: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao-assistir{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao-info{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botoes :hover{
+    background-color: white;
+    color: black;
+}
+
+.botoes i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+.categorias{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .50);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container .mostrar{
+    display: flex;
+
+}
+
+.modal{
+    background:linear-gradient(rgba(0,0,0,.80), rgba(0,0,0,.80)100%);
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    border: 1px solid white;
+    position: relative;
+}
+
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal .3s; 
+}
+
+.fechar{
+    position: absolute;
+    font-size: 1.2em;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-family: "Arial";
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .30);
+}
+
+*/
